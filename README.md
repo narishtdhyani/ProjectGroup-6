@@ -11,6 +11,7 @@ __Goal:__ With this project our goal is to help leave a clean digital footprint,
 
 __Technology Stack:__ Tensorflow/Keras, NLP, IBM Watson Speech to text, IBM Watson tone analyser (we want to see if the tone has any correlation to abusive comments), ReactJS, Python and other technologies TBD.
 
+![Image of Architecture] https://github.com/SJSUFall2019-CMPE272/ProjectGroup-6/blob/master/Architecture_Idea1.JPG
 ------------------------------------------------------------------------------------------------------------------------------
 
 ### 2. Title: Personalized Restaurant Recommendation System
