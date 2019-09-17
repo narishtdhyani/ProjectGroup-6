@@ -30,7 +30,7 @@ __Technology Stack:__  ReactJS, Python, AWS, Restful API, ML, Other technologies
 __Problem__:  Have you ever roamed around to get a parking space??
 Have you ever got a parking ticket? How difficult is to search parking space in a parking lot
 
-__Proposed solution:__ A engine that contionously monitors parking spots and uses computer vision expecially Deep learning as well as machine learning methodologies or techniques to analyze the available parking space. It will use techniques to find a spot when the user requests for it. The user just needs to select the location of the parking area or the market place . ParkSmart will indeed search and reserve the parking spot as well as will notify to the user.
+__Proposed solution:__ A engine that contionously monitors parking spots and uses computer vision especially Deep learning as well as machine learning methodologies or techniques to analyze the available parking space. It will use techniques to find a spot when the user requests for it. The user just needs to select the location of the parking area or the market place . ParkSmart will indeed search and reserve the parking spot as well as will notify to the user.
 
 __Goal:__ ParkSmart is here to save you. Just use the app, get your parking coordinates that will be reserved for you and you are set.
 
