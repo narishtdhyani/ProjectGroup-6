@@ -10,3 +10,18 @@ An API running on intensive machine learning algorithms, which can tackle online
 __Goal:__ With this project our goal is to help leave a clean digital footprint, be more responsible online and help reduce bullying or the side effects of reading abusive content.
 
 __Technology Stack:__ Tensorflow/Keras, NLP, IBM Watson Speech to text, IBM Watson tone analyser (we want to see if the tone has any correlation to abusive comments), ReactJS, Python and other technologies TBD.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+### 2. Title: Personalized Restaurant Recommendation System
+
+__Problem__: Often, when we search for a good restaurant online, we spend a lot of time going through reviews and ratings on different websites. This becomes even more difficult when we are in a new city. 
+
+__Proposed solution:__ Our personalized restaurant recommendation system will analyze user’s history data of past restaurant visits, reviews and ratings given by the user to those food joints and user’s profile data. Profile data could be helpful even more in cases when there is no user history available. Added to this analysis will be supporting data for the restaurants ratings in the database given by all other customers as well. The cumulative impact of all such factors would suggest the user real good places to eat out as per his taste and preferences.
+
+__Goal:__ This application is for anyone and everyone using the internet for finding a good place to dine out in very less time so that user experience is enriched and expectations met.
+
+__Technology Stack:__  ReactJS, Python, AWS, Restful API, ML, Other technologies TBD 
+
+------------------------------------------------------------------------------------------------------------------------------
+
