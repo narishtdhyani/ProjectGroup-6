@@ -23,5 +23,9 @@ __Goal:__ This application is for anyone and everyone using the internet for fin
 
 __Technology Stack:__  ReactJS, Python, AWS, Restful API, ML, Other technologies TBD 
 
+<p align="center">
+  <img src="Desktop/Restaurant_Personalised_Recommeder.png" width="350">
+</p>
+
 ------------------------------------------------------------------------------------------------------------------------------
 
