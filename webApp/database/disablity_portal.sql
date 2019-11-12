@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 12, 2019 at 05:03 AM
+-- Generation Time: Nov 12, 2019 at 06:45 AM
 -- Server version: 5.7.21
 -- PHP Version: 7.2.4
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `openings` (
   `job_descr` varchar(300) NOT NULL,
   `job_location` varchar(150) NOT NULL,
   `skills_required` varchar(300) NOT NULL,
-  `closing_dt` timestamp NOT NULL,
+  `closing_dt` date NOT NULL,
   `job_status` enum('open','close') NOT NULL DEFAULT 'open',
   `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_on` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `type_of_user`, `phone_num`, `profile_img_file_name`, `address`, `d_o_b`, `resume_file_name`, `company`, `orgn_type`, `created_on`, `updated_on`) VALUES
 (1, 'Narisht', 'Dhyani', 'narishtdhyani14584@sjsu.edu', '$2b$10$iyCbuH3.6Uzrg.hK5m5JG.UDX7p7t9UkMK0wxIDi28v48/kO8E2X.', 'user', '9711661419', NULL, NULL, NULL, NULL, NULL, NULL, '2019-09-17 18:07:30', '2019-09-18 08:24:44'),
-(63, 'test1', 'user', 'narishtdhyani@gmail.com', '$2b$10$mVJHuLqkkI5JK1t7u1PTQu9E8JO04iEwORgoMmBWA1VR3yf6FocEC', 'user', NULL, NULL, 'Fountain Plaza', '2019-05-01', NULL, NULL, NULL, '2019-11-12 04:35:52', NULL);
+(63, 'test1', 'user', 'test@gmail.com', '$2b$10$mVJHuLqkkI5JK1t7u1PTQu9E8JO04iEwORgoMmBWA1VR3yf6FocEC', 'user', NULL, NULL, 'Fountain Plaza', '2019-05-01', NULL, NULL, NULL, '2019-11-12 04:35:52', '2019-11-12 06:26:49');
 
 -- --------------------------------------------------------
 
@@ -107,7 +107,15 @@ CREATE TABLE IF NOT EXISTS `user_disabilities` (
   `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_on` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user_disabilities`
+--
+
+INSERT INTO `user_disabilities` (`id`, `user_id`, `name`, `created_on`, `updated_on`) VALUES
+(1, 63, 'Test1', '2019-11-12 06:39:32', NULL),
+(2, 63, 'Test3', '2019-11-12 06:39:43', '2019-11-12 06:44:18');
 
 -- --------------------------------------------------------
 
@@ -121,8 +129,8 @@ CREATE TABLE IF NOT EXISTS `user_employments` (
   `user_id` int(11) UNSIGNED NOT NULL,
   `orgn_name` varchar(150) NOT NULL,
   `designation` varchar(150) NOT NULL,
-  `from_period` timestamp NOT NULL,
-  `to_period` timestamp NOT NULL,
+  `from_period` date NOT NULL,
+  `to_period` date NOT NULL,
   `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_on` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
@@ -141,8 +149,8 @@ CREATE TABLE IF NOT EXISTS `user_qualifications` (
   `university_name` varchar(150) NOT NULL,
   `degree_level` varchar(150) NOT NULL,
   `qualification_name` varchar(150) NOT NULL,
-  `start_dt` timestamp NOT NULL,
-  `completion_dt` timestamp NOT NULL,
+  `start_dt` date NOT NULL,
+  `completion_dt` date NOT NULL,
   `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_on` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
